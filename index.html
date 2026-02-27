@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayushman Dash — Applied AI / LLM Engineer & Data Analyst specializing in RAG, AI agents, and fintech data systems.">
+  <meta name="keywords" content="AI Engineer, LLM, RAG, Data Analyst, LangChain, Python, Fintech">
+  <meta property="og:title" content="Ayushman Dash — Applied AI Engineer">
+  <meta property="og:description" content="Building production-grade intelligent systems in fintech.">
+  <meta name="theme-color" content="#05070a">
+
+  <title>Ayushman Dash — Applied AI / LLM Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-brand">Ayush<span>.</span></a>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- LEFT — TEXT -->
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Open to Opportunities
+          </div>
+
+          <h1 class="hero-name">
+            Ayushman<br><em>Dash</em>
+          </h1>
+
+          <p class="hero-role">
+            <span class="mono" id="typed-role">Applied AI / LLM Engineer</span>
+            <span class="role-sep" aria-hidden="true">·</span>
+            <span style="color:var(--text3)">Fintech · Data · AI</span>
+          </p>
+
+          <p class="hero-desc">
+            2+ years building <strong>production-grade intelligent systems</strong> in fintech.
+            Specialized in RAG architectures, vector databases, AI agent workflows, and
+            data pipelines that drive measurable business outcomes.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              View Projects
+            </a>
+            <a href="mailto:ayushmandash95@gmail.com" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <div class="stat-val">2+</div>
+              <div class="stat-lbl">YRS EXPERIENCE</div>
+            </div>
+            <div>
+              <div class="stat-val">167K+</div>
+              <div class="stat-lbl">USERS SEGMENTED</div>
+            </div>
+            <div>
+              <div class="stat-val">75%</div>
+              <div class="stat-lbl">ACCURACY LIFT</div>
+            </div>
+            <div>
+              <div class="stat-val">80%</div>
+              <div class="stat-lbl">EFFORT REDUCED</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT — PHOTO -->
+        <div class="hero-photo-wrap">
+          <!-- Floating chips -->
+          <div class="float-chip chip-top" aria-hidden="true">
+            <span class="chip-icon">🤖</span> RAG Engineer
+          </div>
+          <div class="float-chip chip-mid" aria-hidden="true">
+            <span class="chip-icon">📊</span> Data Analyst
+          </div>
+          <div class="float-chip chip-bot" aria-hidden="true">
+            <span class="chip-icon">⚡</span> LLM Builder
+          </div>
+
+          <div class="photo-card">
+            <!-- Corner accents -->
+            <div class="photo-corner tl" aria-hidden="true"></div>
+            <div class="photo-corner tr" aria-hidden="true"></div>
+            <div class="photo-corner bl" aria-hidden="true"></div>
+            <div class="photo-corner br" aria-hidden="true"></div>
+
+            <!--
+              ╔══════════════════════════════════════╗
+              ║  REPLACE THIS IMAGE WITH YOUR PHOTO  ║
+              ║  Place your photo at:                ║
+              ║  assets/profile.jpg                  ║
+              ║  Recommended: 420×480px portrait     ║
+              ╚══════════════════════════════════════╝
+            -->
+            <img
+              src="assets/profile.jpg"
+              alt="Ayushman Dash — Applied AI Engineer"
+              class="profile-img"
+              onerror="this.onerror=null; this.src='assets/profile-placeholder.svg'; this.style.objectFit='contain'; this.style.background='#0f1318';"
+            >
+
+            <div class="photo-overlay" aria-hidden="true"></div>
+
+            <div class="photo-badge">
+              <div>
+                <div class="pb-name">Ayushman Dash</div>
+                <div class="pb-title">Applied AI / LLM Engineer</div>
+              </div>
+              <div class="pb-status">
+                <span class="pb-dot" aria-label="Available for work"></span>
+                Available
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TICKER
+  ══════════════════════════════════════ -->
+  <div id="ticker-section" aria-hidden="true">
+    <div class="ticker-wrap">
+      <div class="ticker-row">
+        <span class="ticker-item">RAG Architecture <span class="ticker-sep"></span></span>
+        <span class="ticker-item">LLM Engineering <span class="ticker-sep"></span></span>
+        <span class="ticker-item">AI Agent Design <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Vector Search <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Prompt Engineering <span class="ticker-sep"></span></span>
+        <span class="ticker-item">ML Model Deployment <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Data Pipelines <span class="ticker-sep"></span></span>
+        <span class="ticker-item">A/B Testing <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Hallucination Mitigation <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Embeddings & FAISS <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Fintech Analytics <span class="ticker-sep"></span></span>
+        <span class="ticker-item">LangChain &amp; LlamaIndex <span class="ticker-sep"></span></span>
+        <span class="ticker-item">RAG Architecture <span class="ticker-sep"></span></span>
+        <span class="ticker-item">LLM Engineering <span class="ticker-sep"></span></span>
+        <span class="ticker-item">AI Agent Design <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Vector Search <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Prompt Engineering <span class="ticker-sep"></span></span>
+        <span class="ticker-item">ML Model Deployment <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Data Pipelines <span class="ticker-sep"></span></span>
+        <span class="ticker-item">A/B Testing <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Hallucination Mitigation <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Embeddings & FAISS <span class="ticker-sep"></span></span>
+        <span class="ticker-item">Fintech Analytics <span class="ticker-sep"></span></span>
+        <span class="ticker-item">LangChain &amp; LlamaIndex <span class="ticker-sep"></span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" class="section section-alt" aria-label="About me">
+    <div class="container">
+      <div class="section-tag">About</div>
+      <h2 class="section-heading">Who I <span>Am</span></h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm an <strong>Applied AI / LLM Engineer and Data Analyst</strong> with 2+ years of hands-on
+            experience building production-grade data systems and intelligent applications in the
+            <strong>fintech domain</strong>.
+          </p>
+          <p>
+            Currently at <strong>AliceBlue Financial Services</strong> in Bengaluru, I design RAG pipelines,
+            AI agent workflows, and executive-facing analytics dashboards that transform how
+            financial decisions are made. I've worked with 167K+ user datasets and deployed ML
+            models that lifted prediction accuracy by 75%.
+          </p>
+          <p>
+            My work sits at the intersection of <strong>LLMs, vector databases, and data engineering</strong> —
+            bridging the gap between complex financial problems and elegant AI-driven solutions.
+            I believe great AI engineering is equal parts rigorous data work and creative system design.
+          </p>
+          <div class="about-chips">
+            <span class="a-chip">RAG Architecture</span>
+            <span class="a-chip">LangChain</span>
+            <span class="a-chip">PgVector</span>
+            <span class="a-chip">Python</span>
+            <span class="a-chip">SQL</span>
+            <span class="a-chip">Tableau</span>
+            <span class="a-chip">Prompt Engineering</span>
+            <span class="a-chip">MLflow</span>
+          </div>
+        </div>
+
+        <div class="about-photo-side reveal reveal-delay-2">
+          <div class="about-img-wrap">
+            <img
+              src="assets/profile.jpg"
+              alt="Ayushman Dash"
+              class="profile-img"
+              onerror="this.onerror=null; this.src='assets/profile-placeholder.svg'; this.style.objectFit='contain'; this.style.background='#0f1318';"
+            >
+          </div>
+          <div class="about-card">
+            <div class="ac-label">USERS SEGMENTED</div>
+            <div class="ac-value">167K+</div>
+            <div class="ac-sub">AliceBlue Financial Services</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+  <section id="skills" class="section" aria-label="Skills">
+    <div class="container">
+      <div class="section-tag">Arsenal</div>
+      <h2 class="section-heading">Skills &amp; <span>Technologies</span></h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="sc-icon">🤖</div>
+          <div class="sc-title">LLM &amp; AI Frameworks</div>
+          <div class="sc-category">Core AI Stack</div>
+          <div class="sc-tags">
+            <span class="sc-tag">LangChain</span>
+            <span class="sc-tag">LlamaIndex</span>
+            <span class="sc-tag">OpenAI APIs</span>
+            <span class="sc-tag">Anthropic APIs</span>
+            <span class="sc-tag">HuggingFace</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="sc-icon">🧠</div>
+          <div class="sc-title">Vector Databases</div>
+          <div class="sc-category">Retrieval Systems</div>
+          <div class="sc-tags">
+            <span class="sc-tag">PgVector</span>
+            <span class="sc-tag">FAISS</span>
+            <span class="sc-tag">Embeddings</span>
+            <span class="sc-tag">Semantic Search</span>
+            <span class="sc-tag">RAG Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="sc-icon">⚙️</div>
+          <div class="sc-title">Machine Learning</div>
+          <div class="sc-category">ML / DL</div>
+          <div class="sc-tags">
+            <span class="sc-tag">TensorFlow</span>
+            <span class="sc-tag">PyTorch</span>
+            <span class="sc-tag">Keras</span>
+            <span class="sc-tag">Random Forest</span>
+            <span class="sc-tag">Gradient Boosting</span>
+            <span class="sc-tag">K-Means</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="sc-icon">🗄️</div>
+          <div class="sc-title">Data Engineering</div>
+          <div class="sc-category">Data Stack</div>
+          <div class="sc-tags">
+            <span class="sc-tag">Python</span>
+            <span class="sc-tag">SQL</span>
+            <span class="sc-tag">Pandas</span>
+            <span class="sc-tag">NumPy</span>
+            <span class="sc-tag">PostgreSQL</span>
+            <span class="sc-tag">ETL Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="sc-icon">📊</div>
+          <div class="sc-title">BI &amp; Visualization</div>
+          <div class="sc-category">Analytics</div>
+          <div class="sc-tags">
+            <span class="sc-tag">Tableau</span>
+            <span class="sc-tag">Power BI</span>
+            <span class="sc-tag">DAX</span>
+            <span class="sc-tag">Matplotlib</span>
+            <span class="sc-tag">Seaborn</span>
+            <span class="sc-tag">R-ggplot2</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="sc-icon">🚀</div>
+          <div class="sc-title">Backend &amp; Cloud</div>
+          <div class="sc-category">Deployment</div>
+          <div class="sc-tags">
+            <span class="sc-tag">Django</span>
+            <span class="sc-tag">Flask</span>
+            <span class="sc-tag">Streamlit</span>
+            <span class="sc-tag">REST APIs</span>
+            <span class="sc-tag">AWS</span>
+            <span class="sc-tag">MLflow</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EXPERIENCE
+  ══════════════════════════════════════ -->
+  <section id="experience" class="section section-alt" aria-label="Work experience">
+    <div class="container">
+      <div class="section-tag">Career</div>
+      <h2 class="section-heading">Work <span>Experience</span></h2>
+
+      <div class="exp-wrap reveal">
+        <!-- Tab nav -->
+        <div class="exp-nav" role="tablist" aria-label="Job tabs">
+          <div class="exp-nav-item active" role="tab" data-tab="job-1" tabindex="0" aria-selected="true">
+            <div class="exp-nav-date">Jan 2025 — Present</div>
+            <div class="exp-nav-company">AliceBlue Financial Services</div>
+            <div class="exp-nav-loc">📍 Bengaluru</div>
+          </div>
+          <div class="exp-nav-item" role="tab" data-tab="job-2" tabindex="0" aria-selected="false">
+            <div class="exp-nav-date">Jan 2024 — Dec 2024</div>
+            <div class="exp-nav-company">Webzin Infotech</div>
+            <div class="exp-nav-loc">📍 Bhubaneswar</div>
+          </div>
+        </div>
+
+        <!-- Panes -->
+        <div class="exp-content-area">
+
+          <div id="job-1" class="exp-pane active" role="tabpanel">
+            <div class="exp-role">Data Analyst / Applied AI Engineer</div>
+            <div class="exp-meta">AliceBlue Financial Services · Jan 2025 — Present · Bengaluru</div>
+            <ul class="exp-achievements">
+              <li>Built automated <strong>Python + SQL data pipelines</strong> reducing manual reporting effort by <em>40%</em></li>
+              <li>Designed and deployed interactive <strong>KPI dashboards</strong> used by marketing and operations teams for real-time analytics</li>
+              <li>Conducted <strong>A/B testing and statistical analysis</strong>, improving customer retention by <em>15%</em></li>
+              <li>Developed <strong>ML-based customer segmentation models</strong> for <em>167K+ users</em> enabling targeted engagement strategies</li>
+              <li>Built ML models for <strong>churn prediction &amp; mutual fund behaviour analysis</strong>, improving prediction accuracy by <em>75%</em></li>
+              <li>Developed <strong>LLM-powered AI solutions</strong> to automate stock analysis, boosting operational efficiency by <em>75%</em></li>
+              <li>Engineered an <strong>MCP (Management Control Panel)</strong> for executive leadership with AI-driven natural language queries, reducing manual SQL reporting</li>
+              <li>Collaborated with business stakeholders to convert <strong>ambiguous financial problems into AI-driven solutions</strong></li>
+            </ul>
+          </div>
+
+          <div id="job-2" class="exp-pane" role="tabpanel">
+            <div class="exp-role">Web Developer (Python / Django)</div>
+            <div class="exp-meta">Webzin Infotech · Jan 2024 — Dec 2024 · Bhubaneswar</div>
+            <ul class="exp-achievements">
+              <li>Developed scalable <strong>Django applications and REST APIs</strong> supporting client analytics workflows</li>
+              <li>Built <strong>responsive dashboards and backend systems</strong> for client business operations</li>
+              <li>Architected clean, maintainable codebases following <strong>Django best practices</strong> and MVC principles</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects" class="section" aria-label="Projects">
+    <div class="container">
+      <div class="section-tag">Work</div>
+      <h2 class="section-heading">Featured <span>Projects</span></h2>
+
+      <div class="proj-grid">
+
+        <div class="proj-card">
+          <div class="proj-num">PROJECT 01 / AI AGENT</div>
+          <div class="proj-icon">🤖</div>
+          <div class="proj-title">AI-Powered Blog Automation &amp; SEO Agent</div>
+          <p class="proj-desc">
+            Autonomous AI agent that generates SEO-optimized blog content and auto-publishes
+            via WordPress REST API. Implements a full multi-step workflow: Topic → Keyword
+            Expansion → Structured Outline → Content Generation → SEO Optimization → Publishing.
+            Integrated embeddings + vector database for contextual memory. Reduced manual content
+            production effort by <strong>80%</strong>.
+          </p>
+          <div class="proj-tech">
+            <span class="pt">LangChain</span>
+            <span class="pt">Vector DB</span>
+            <span class="pt">WordPress API</span>
+            <span class="pt">Embeddings</span>
+            <span class="pt">Python</span>
+            <span class="pt">SEO</span>
+          </div>
+          <div class="proj-accent-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-num">PROJECT 02 / RAG SYSTEM</div>
+          <div class="proj-icon">📋</div>
+          <div class="proj-title">Insurance Recommendation RAG Application</div>
+          <p class="proj-desc">
+            RAG-based insurance advisory system using LangChain + PgVector. Indexed policy
+            documents, clauses, eligibility rules, and coverage terms into a vector database.
+            Semantic retrieval recommends best-fit insurance based on user age, diseases, and
+            risk profile. Added <strong>explainable AI reasoning</strong> layer and hallucination
+            guardrails to ensure grounded, trustworthy responses.
+          </p>
+          <div class="proj-tech">
+            <span class="pt">LangChain</span>
+            <span class="pt">PgVector</span>
+            <span class="pt">RAG</span>
+            <span class="pt">Guardrails</span>
+            <span class="pt">XAI</span>
+            <span class="pt">PostgreSQL</span>
+          </div>
+          <div class="proj-accent-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-num">PROJECT 03 / ANALYTICS DASHBOARD</div>
+          <div class="proj-icon">📊</div>
+          <div class="proj-title">Lead Flow Analysis Dashboard — Tableau</div>
+          <p class="proj-desc">
+            Interactive Tableau dashboard tracking the complete lead-to-account conversion
+            funnel across 8+ stages (OTP, PAN, KYC, E-sign, UCC). Identified key drop-off
+            points improving onboarding funnel efficiency by <strong>15%</strong>. Built aging
+            bucket analysis to categorize leads and branch-wise performance tracking, giving
+            leadership actionable regional insights across B2B and B2C segments.
+          </p>
+          <div class="proj-tech">
+            <span class="pt">Tableau</span>
+            <span class="pt">SQL</span>
+            <span class="pt">Funnel Analysis</span>
+            <span class="pt">B2B/B2C</span>
+            <span class="pt">KPI Tracking</span>
+          </div>
+          <div class="proj-accent-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-num">PROJECT 04 / LLM INTEGRATION</div>
+          <div class="proj-icon">⚡</div>
+          <div class="proj-title">Model Context Protocol (MCP) — AI Integration</div>
+          <p class="proj-desc">
+            MCP layer connecting LLMs with enterprise datasets (CEO Dashboard, Trade Details,
+            Order Rejection) for natural language querying by executives. Implemented schema
+            normalization, column standardization, and structured CTE design. Improved response
+            accuracy by <strong>30%+</strong> through iterative prompt engineering refinements and
+            predefined business rule injection.
+          </p>
+          <div class="proj-tech">
+            <span class="pt">MCP</span>
+            <span class="pt">LLM</span>
+            <span class="pt">Prompt Engineering</span>
+            <span class="pt">SQL CTEs</span>
+            <span class="pt">Python</span>
+            <span class="pt">NL Queries</span>
+          </div>
+          <div class="proj-accent-line" aria-hidden="true"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EDUCATION & CERTS
+  ══════════════════════════════════════ -->
+  <section id="education" class="section section-alt" aria-label="Education and certifications">
+    <div class="container">
+      <div class="section-tag">Background</div>
+      <h2 class="section-heading">Education &amp; <span>Certifications</span></h2>
+
+      <div class="edu-grid reveal">
+
+        <!-- EDUCATION -->
+        <div>
+          <div class="edu-col-title">Academic Background</div>
+
+          <div class="edu-item">
+            <div class="edu-degree">B.Tech — Computer Science &amp; Engineering</div>
+            <div class="edu-school">Gandhi Institute of Engineering &amp; Technology University, Gunupur, Odisha</div>
+            <div class="edu-year">Aug 2019 — May 2023</div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-degree">Intermediate in Science</div>
+            <div class="edu-school">Vedic College of Science, Sambalpur, Odisha</div>
+            <div class="edu-year">Aug 2017 — Apr 2019</div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-degree">Matriculation (10th)</div>
+            <div class="edu-school">Saraswathi Shishu Vidya Mandir, Jharsuguda, Odisha</div>
+            <div class="edu-year">May 2017</div>
+          </div>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <div>
+          <div class="edu-col-title">Certifications</div>
+
+          <div class="cert-item">
+            <div class="cert-icon-wrap">📊</div>
+            <div>
+              <div class="cert-name">Data Science Certification</div>
+              <div class="cert-issuer">ExcelR · Aug 2023 – Jan 2024</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon-wrap">📈</div>
+            <div>
+              <div class="cert-name">Power BI Dashboard Developer Workshop</div>
+              <div class="cert-issuer">Microsoft Power BI</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon-wrap">🤖</div>
+            <div>
+              <div class="cert-name">Machine Learning with Python</div>
+              <div class="cert-issuer">Python ML Certification</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon-wrap">💡</div>
+            <div>
+              <div class="cert-name">Demystify AI and OpenVINO™ Toolkit</div>
+              <div class="cert-issuer">Intel Corporation</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon-wrap">💻</div>
+            <div>
+              <div class="cert-name">Workshop on Data Structures</div>
+              <div class="cert-issuer">Coding Blocks</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon-wrap">🎯</div>
+            <div>
+              <div class="cert-name">Common Internship Test (CIT)</div>
+              <div class="cert-issuer">Internship Studio</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact" class="section" aria-label="Contact">
+    <div class="contact-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="section-tag" style="justify-content:center">Contact</div>
+        <h2 class="contact-headline">Let's Build <span>Something</span> Great</h2>
+        <p class="contact-sub">
+          Open to Applied AI / ML engineering roles, consulting, and interesting fintech projects.
+          Let's connect.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:ayushmandash95@gmail.com" class="contact-link">
+            <div class="cl-icon">✉</div>
+            <div>
+              <div class="cl-label">EMAIL</div>
+              <div class="cl-val">ayushmandash95@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:9938076661" class="contact-link">
+            <div class="cl-icon">☏</div>
+            <div>
+              <div class="cl-label">PHONE</div>
+              <div class="cl-val">+91 9938076661</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/ayushman-dash-84422320b" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="cl-icon">in</div>
+            <div>
+              <div class="cl-label">LINKEDIN</div>
+              <div class="cl-val">linkedin.com/in/ayushman-dash-84422320b</div>
+            </div>
+          </a>
+          <a href="https://github.com/dashayus" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="cl-icon">⌥</div>
+            <div>
+              <div class="cl-label">GITHUB</div>
+              <div class="cl-val">github.com/dashayus</div>
+            </div>
+          </a>
+        </div>
+
+        <a href="mailto:ayushmandash95@gmail.com" class="btn btn-primary" style="font-size:1rem;padding:16px 40px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Send Me a Message
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-brand">Ayush<span>.</span></div>
+    <div class="footer-copy">© 2025 Ayushman Dash. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

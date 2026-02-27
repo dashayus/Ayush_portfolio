@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="480" viewBox="0 0 420 480">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1318"/>
+      <stop offset="50%" style="stop-color:#141920"/>
+      <stop offset="100%" style="stop-color:#090d12"/>
+    </linearGradient>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e5c3"/>
+      <stop offset="100%" style="stop-color:#00b8e6"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2530"/>
+      <stop offset="100%" style="stop-color:#0f1a22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(0,229,195,0.08)"/>
+      <stop offset="100%" style="stop-color:rgba(0,0,0,0)"/>
+    </radialGradient>
+    <clipPath id="circleClip">
+      <circle cx="210" cy="185" r="90"/>
+    </clipPath>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="420" height="480" fill="url(#bgGrad)"/>
+  <rect width="420" height="480" fill="url(#glow)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="80" x2="420" y2="80"/>
+    <line x1="0" y1="160" x2="420" y2="160"/>
+    <line x1="0" y1="240" x2="420" y2="240"/>
+    <line x1="0" y1="320" x2="420" y2="320"/>
+    <line x1="0" y1="400" x2="420" y2="400"/>
+    <line x1="70" y1="0" x2="70" y2="480"/>
+    <line x1="140" y1="0" x2="140" y2="480"/>
+    <line x1="210" y1="0" x2="210" y2="480"/>
+    <line x1="280" y1="0" x2="280" y2="480"/>
+    <line x1="350" y1="0" x2="350" y2="480"/>
+  </g>
+
+  <!-- Body / Torso shape -->
+  <ellipse cx="210" cy="420" rx="120" ry="90" fill="url(#bodyGrad)"/>
+  <ellipse cx="210" cy="390" rx="85" ry="60" fill="#1e2d3d"/>
+
+  <!-- Neck -->
+  <rect x="188" y="270" width="44" height="48" rx="12" fill="#c8a882"/>
+
+  <!-- Head circle with gradient -->
+  <circle cx="210" cy="185" r="92" fill="rgba(0,229,195,0.04)" filter="url(#softShadow)"/>
+  <circle cx="210" cy="185" r="90" fill="#c8a882"/>
+
+  <!-- Face shading -->
+  <ellipse cx="210" cy="200" rx="68" ry="72" fill="#d4a574"/>
+  <ellipse cx="210" cy="240" rx="60" ry="40" fill="#c8a070" opacity="0.6"/>
+
+  <!-- Hair -->
+  <ellipse cx="210" cy="130" rx="75" ry="55" fill="#2c1a0e"/>
+  <ellipse cx="143" cy="165" rx="22" ry="38" fill="#2c1a0e"/>
+  <ellipse cx="277" cy="165" rx="22" ry="38" fill="#2c1a0e"/>
+  <ellipse cx="210" cy="108" rx="65" ry="35" fill="#3d2510"/>
+
+  <!-- Eyebrows -->
+  <path d="M168 175 Q182 168 196 172" stroke="#2c1a0e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M224 172 Q238 168 252 175" stroke="#2c1a0e" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="182" cy="190" rx="12" ry="9" fill="white"/>
+  <ellipse cx="238" cy="190" rx="12" ry="9" fill="white"/>
+  <circle cx="184" cy="191" r="7" fill="#3d2510"/>
+  <circle cx="240" cy="191" r="7" fill="#3d2510"/>
+  <circle cx="184" cy="191" r="4" fill="#1a0e06"/>
+  <circle cx="240" cy="191" r="4" fill="#1a0e06"/>
+  <!-- Eye shine -->
+  <circle cx="187" cy="188" r="2" fill="white" opacity="0.8"/>
+  <circle cx="243" cy="188" r="2" fill="white" opacity="0.8"/>
+
+  <!-- Nose -->
+  <path d="M205 205 Q210 225 215 205" stroke="#b8905a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="200" cy="225" rx="6" ry="4" fill="#b8905a" opacity="0.4"/>
+  <ellipse cx="220" cy="225" rx="6" ry="4" fill="#b8905a" opacity="0.4"/>
+
+  <!-- Smile -->
+  <path d="M190 242 Q210 260 230 242" stroke="#a0754a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Ears -->
+  <ellipse cx="120" cy="192" rx="14" ry="18" fill="#c8a882"/>
+  <ellipse cx="300" cy="192" rx="14" ry="18" fill="#c8a882"/>
+  <ellipse cx="120" cy="192" rx="8" ry="12" fill="#b8905a" opacity="0.5"/>
+  <ellipse cx="300" cy="192" rx="8" ry="12" fill="#b8905a" opacity="0.5"/>
+
+  <!-- Collar / Shirt -->
+  <path d="M130 340 Q145 290 175 280 L210 295 L245 280 Q275 290 290 340 Q270 370 210 375 Q150 370 130 340Z" fill="#1a2d3d"/>
+  <!-- Collar detail -->
+  <path d="M175 280 L210 320 L245 280" stroke="#00e5c3" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- Tech badge overlay at bottom -->
+  <rect x="20" y="430" width="380" height="38" rx="8" fill="rgba(9,13,18,0.9)" stroke="rgba(0,229,195,0.2)" stroke-width="1"/>
+  <text x="30" y="455" font-family="monospace" font-size="11" fill="#00e5c3" letter-spacing="0.5">◈</text>
+  <text x="48" y="455" font-family="monospace" font-size="11" fill="#a8b3bf">Upload your photo →</text>
+  <text x="200" y="455" font-family="monospace" font-size="11" fill="#5a6473">assets/profile.jpg</text>
+
+  <!-- Decorative corner teal lines -->
+  <path d="M0 0 L40 0 M0 0 L0 40" stroke="#00e5c3" stroke-width="2"/>
+  <path d="M420 0 L380 0 M420 0 L420 40" stroke="#00e5c3" stroke-width="2"/>
+  <path d="M0 480 L40 480 M0 480 L0 440" stroke="#00e5c3" stroke-width="2"/>
+  <path d="M420 480 L380 480 M420 480 L420 440" stroke="#00e5c3" stroke-width="2"/>
+</svg>
